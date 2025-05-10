@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Complete Flexbox Properties Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .container {
+      background-color: #f0f0f0;
+      border: 2px solid #ccc;
+      padding: 10px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 200px;
+    }
+
+    .box {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      width: 80px;
+      text-align: center;
+    }
+
+    .row { 
+        flex-direction: row; 
+    }
+    .row-reverse { 
+        flex-direction: row-reverse; 
+    }
+    .column { 
+        flex-direction: column; height: 300px; 
+    }
+    .column-reverse {
+         flex-direction: column-reverse; height: 300px; 
+    }
+
+    .align-start { 
+        align-items: flex-start; 
+    }
+    .align-center {
+        align-items: center; 
+    }
+    .align-end { 
+        align-items: flex-end; 
+    }
+    .align-stretch {
+        align-items: stretch; 
+    }
+
+    .justify-start { 
+        justify-content: flex-start; 
+    }
+    .justify-center { 
+        justify-content: center; 
+    }
+    .justify-end { 
+        justify-content: flex-end; 
+    }
+    .justify-between { 
+        justify-content: space-between; 
+    }
+    .justify-around { 
+        justify-content: space-around; 
+    }
+    .justify-evenly { 
+        justify-content: space-evenly; 
+    }
+
+    .align-content-start { 
+        align-content: flex-start; height: 300px; 
+    }
+    .align-content-center { 
+        align-content: center; height: 300px; 
+    }
+    .align-content-end { 
+        align-content: flex-end; height: 300px; 
+    }
+    .align-content-between { 
+        align-content: space-between; height: 300px; 
+    }
+    .align-content-around { 
+        align-content: space-around; height: 300px; 
+    }
+    .align-content-stretch { 
+        align-content: stretch; height: 300px; 
+    }
+
+    .stretch .box {
+      height: auto;
+      flex-grow: 1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Flexbox Properties</h1>
+  <br>
+  <h1>FLEX DIRECTION</h1>
+  <br>
+  <h2>1. flex-direction: row</h2>
+  <div class="container row">
+    <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+  </div>
+
+  <h2>2. flex-direction: row-reverse</h2>
+  <div class="container row-reverse">
+    <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+  </div>
+
+  <h2>3. flex-direction: column</h2>
+  <div class="container column">
+    <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+  </div>
+
+  <h2>4. flex-direction: column-reverse</h2>
+  <div class="container column-reverse">
+    <div class="box">A</div><div class="box">B</div><div class="box">C</div>
+  </div>
+
+  <br>
+  <h1>Align Items</h1>
+  <br>
+  <h2>5. align-items: flex-start</h2>
+  <div class="container align-start" style="height: 200px;">
+    <div class="box">Top</div><div class="box">Top</div><div class="box">Top</div>
+  </div>
+
+  <h2>6. align-items: center</h2>
+  <div class="container align-center" style="height: 200px;">
+    <div class="box">Center</div><div class="box">Center</div><div class="box">Center</div>
+  </div>
+
+  <h2>7. align-items: flex-end</h2>
+  <div class="container align-end" style="height: 200px;">
+    <div class="box">Bottom</div><div class="box">Bottom</div><div class="box">Bottom</div>
+  </div>
+
+  <h2>8. align-items: stretch</h2>
+  <div class="container align-stretch stretch">
+    <div class="box">Stretch</div><div class="box">Stretch</div><div class="box">Stretch</div>
+  </div>
+
+  <br>
+  <h1>Justify Content</h1>
+  <br>
+  <h2>9. justify-content: flex-start</h2>
+  <div class="container justify-start">
+    <div class="box">Start</div><div class="box">Start</div><div class="box">Start</div>
+  </div>
+
+  <h2>10. justify-content: center</h2>
+  <div class="container justify-center">
+    <div class="box">Center</div><div class="box">Center</div><div class="box">Center</div>
+  </div>
+
+  <h2>11. justify-content: flex-end</h2>
+  <div class="container justify-end">
+    <div class="box">End</div><div class="box">End</div><div class="box">End</div>
+  </div>
+
+  <h2>12. justify-content: space-between</h2>
+  <div class="container justify-between">
+    <div class="box">Between</div><div class="box">Between</div><div class="box">Between</div>
+  </div>
+
+  <h2>13. justify-content: space-around</h2>
+  <div class="container justify-around">
+    <div class="box">Around</div><div class="box">Around</div><div class="box">Around</div>
+  </div>
+
+  <h2>14. justify-content: space-evenly</h2>
+  <div class="container justify-evenly">
+    <div class="box">Evenly</div><div class="box">Evenly</div><div class="box">Evenly</div>
+  </div>
+
+  <br>
+  <h1>Align Content</h1>
+  <br>
+  <h2>15. align-content: flex-start</h2>
+  <div class="container align-content-start">
+    <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+    <div class="box">4</div><div class="box">5</div><div class="box">6</div>
+  </div>
+
+  <h2>16. align-content: center</h2>
+  <div class="container align-content-center">
+    <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+    <div class="box">4</div><div class="box">5</div><div class="box">6</div>
+  </div>
+
+  <h2>17. align-content: flex-end</h2>
+  <div class="container align-content-end">
+    <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+    <div class="box">4</div><div class="box">5</div><div class="box">6</div>
+  </div>
+
+  <h2>18. align-content: space-between</h2>
+  <div class="container align-content-between">
+    <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+    <div class="box">4</div><div class="box">5</div><div class="box">6</div>
+  </div>
+
+  <h2>19. align-content: space-around</h2>
+  <div class="container align-content-around">
+    <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+    <div class="box">4</div><div class="box">5</div><div class="box">6</div>
+  </div>
+
+  <h2>20. align-content: stretch</h2>
+  <div class="container align-content-stretch">
+    <div class="box">1</div><div class="box">2</div><div class="box">3</div>
+    <div class="box">4</div><div class="box">5</div><div class="box">6</div>
+  </div>
+
+</body>
+</html>
